@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>📑 Fiberlist 📑</h1>
+    <form>
+      <label for="todo"> 📍Append item:</label><br>
+      <input type="text" id="todo" name="todo" placeholder="Go shopping..." class="input">
+      <input type="submit" value="✔️" class="submit">
+    </form>
+    <p>{{.TODO}}</p>
+  </body>
+  <style>
+    body {
+      font-family: 'Geologica';
+      text-align: center;
+    }
+    h1 {
+      padding: 5px;
+      margin: 1em;
+    }
+    form {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      width: 100%;
+    }
+    input {
+      border: none;
+      background-color: #fff;
+      text-decorations: none;
+    }
+    .submit {
+      font-size: 1em;
+      transition: all 1s;
+    }
+    .submit:hover {
+      transform: scale(2);
+    }
+    .input {
+      width: 50%;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  </style>
+</html>
